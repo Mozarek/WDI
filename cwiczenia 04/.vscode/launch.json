@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "C:/Users/karon/Documents/AGH/1 semestr/wdi/kolos 1/a.exe",
+            "program": "C:/Users/karon/Documents/AGH/1 semestr/wdi/cwiczenia 02/a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
