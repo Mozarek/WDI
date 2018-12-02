@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <windows.h>
 #include <cstdlib>
-#define N 8
+#define N 10
 
 using namespace std;
 
@@ -18,8 +18,10 @@ bool skoczek(int x, int y, int count, int tab[N][N])
 {
     tab[y][x] = count; //wpisujemy w pole na ktore skoczylismy numer skoku
 
-    if(count == 64) //jesli juz obskoczylismy wszystkie to koniec
+    if(count == N*N) //jesli juz obskoczylismy wszystkie to koniec
         return true;
+
+    if(count<50) cout << count << endl;
 
     for(int i=0;i<8;i++) //kazdy skok z mozliwych 8 sprawdzamy
     {
@@ -45,6 +47,8 @@ int main()
 
     if(skoczek(0,0,1,tab))
         cout << "Udalo sie" << endl << endl;
+    else
+        cout << "nie udalo sie";
     //
 
     //fancy animacja
@@ -64,10 +68,9 @@ int main()
             cout << endl;
         }
 
-        Sleep(600);
+        Sleep(200);
         
     }
-    
 
     return 0;
 }

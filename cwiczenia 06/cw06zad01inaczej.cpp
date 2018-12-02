@@ -5,17 +5,17 @@ using namespace std;
 
 int t[MAX] = {1,2,3,4,5};
 
-bool isPossible(int weight, int i, int deep)
+bool isPossible(int weight, int i, int depth)
 {
-    for(int j=0;j<deep;j++)
+    for(int j=0;j<depth;j++)
         cout << "\t";
     cout << "isPossible( " << weight << " , " << i << " )" << endl;
+    
+    if(i==MAX)
+        return false;
 
-    for(int p = i; p<MAX;p++)
-    {
-        if(t[p]==weight || (t[p] < weight && isPossible(weight-t[p] , p+1, deep+1)) )
-            return true;
-    }
+    if(t[i]==weight || (t[i]<weight && isPossible(weight-t[i] , i+1, depth+1) ) || isPossible(weight , i+1, depth+1) )
+        return true;
 
     return false;
 }
