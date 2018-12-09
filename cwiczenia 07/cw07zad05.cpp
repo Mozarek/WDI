@@ -20,8 +20,7 @@ bool skoczek(int x, int y, int count, int tab[N][N])
 
     if(count == N*N) //jesli juz obskoczylismy wszystkie to koniec
         return true;
-
-    if(count<50) cout << count << endl;
+    //
 
     for(int i=0;i<8;i++) //kazdy skok z mozliwych 8 sprawdzamy
     {
