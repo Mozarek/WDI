@@ -57,7 +57,6 @@ int main()
         tab[i] = -1;
 
     hetman(0,tab);
-    cout << count;
 
     return 0;
 }
