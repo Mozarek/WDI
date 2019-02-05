@@ -187,7 +187,7 @@ void deleteAll(node* first)
 int main()
 {
     node *a = NULL;
-    node* b = NULL;
+    node *b = NULL;
     node *c = NULL;
 
     for(int i=0;i<10 ;i++)

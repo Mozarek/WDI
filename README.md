@@ -1,3 +1,3 @@
 # wdi
 
-Wstep do Informatyki
+Rozwiazania czesci zadan z cwiczen z Wstepu do Informatyki
